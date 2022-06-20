@@ -1,0 +1,137 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    border-radius: 5px;
+    box-shadow: 60px -16px black;
+    transition: box-shadow 1s;
+}
+
+.container-left {
+    background: rgb(33, 33, 33);
+    width: 30%;
+}
+
+.container-left h1 {
+    color: white;
+    opacity: 0.4;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 25px 0 25px 15px;
+}
+
+.img-shoes {
+    position: relative;
+    z-index: 1000;
+    left: 50px;
+    bottom: 50px;
+    width: 450px;
+    height: auto;
+    transform: rotate(20deg); 
+}
+
+.container-right {
+    width: 70%;
+}
+
+.title {
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.title h2 {
+    padding-top: 15px;
+}
+
+.title h4 {
+    padding: 25px 0;
+}
+
+.title p {
+    width: 350px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+
+.select-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 15px;
+}
+
+.select-color span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.select-color .active::after {
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+.span1 {
+    background: rgb(33, 33, 33);
+    transition: background-color 1s;
+}
+
+.span2 {
+    background: #bd072d;
+    transition: background-color 1s;
+}
+
+.span3 {
+    background: #CE5B39;
+    transition: background-color 1s;
+}
+
+.btn-buy {
+    padding-left: 30px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 25px;
+}
+
+.btn-buy p {
+    font-size: 32px;
+    transition: color 1s;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    /* background: rgb(33, 33, 33); */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
